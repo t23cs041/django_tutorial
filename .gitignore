@@ -1,0 +1,19 @@
+# venvフォルダは親ディレクトリにあるため、
+# 相対パスで指定する必要はありませんが、
+# データベースとバイトコードは必須です。
+
+# データベース
+db.sqlite3
+
+# Pythonバイトコード
+__pycache__/
+*.pyc
+
+# IDEファイルなど（使用している場合）
+.idea/
+.vscode/
+
+# 仮想環境（DjangoProject\django_tutorial\venv を想定）
+# 今回は mysite の外にあるため、必要ありませんが、
+# この mysite の中に venv を作り直した場合に備えて記述しておきます。
+# venv/
