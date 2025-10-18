@@ -2,7 +2,8 @@
 
 {% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
-<h1 id="site-name"><a href="{% url 'admin:index' %}">{% block branding %}
-
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+{% endblock %}
 
 {% block nav-global %}{% endblock %}
